@@ -8,14 +8,17 @@
  */
 int main(void)
 {	
-	char ch;
+	inte c = 0;
 
-	for (ch = '0'; ch <= 'g'; ch++)
-        {
-		putchar(ch);
-	}	
-	for (ch = 'a'; ch <=  'f'; ch++)
+	while (c < 10)
+
 	{
-		putchar(ch);
-	}	
-	return (0);
+		putchar(48 + c);
+		if (c!= 9)
+                {
+	        	putchar(',');
+			putchar(',');
+		}	
+	 	c++;
+	}
+	
