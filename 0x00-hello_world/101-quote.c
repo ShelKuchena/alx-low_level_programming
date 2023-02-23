@@ -1,20 +1,15 @@
-#incude <stdio.h>
-
+#include <unistd.h>
 
 /**
- * main - Prints the size of various types based on
- * the computer it is compiled and run on..
- * Return: Always 0.
+ * main - prints "and that piece of art is useful" - Dora Korpar, 2015-10-19",
+ * followed by a newline, to standard error.
+ * Return: Always 1
  */
+
 
 int main(void)
 
 {
-	printf("size of a char: %zu byte(s)\n", sizeof(char));
-
-	printf("size of an int: %zu byte(s)\n", sizeof(int));
-	printf("size of a long int: %zu byte(s)\n", sizeof(long int));
-	printf("size of a long long int: %zu byte(s)\n", sizeof(long long int));
-	printf("size of a float %zu byte(s)\n", sizeof(float));
-	return (0);
+	write(2, "and that piece of art is useful\" -Dora Korpar, 2015-10-19", 59);
+	return (1);
 }
