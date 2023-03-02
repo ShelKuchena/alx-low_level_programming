@@ -15,7 +15,7 @@ char *rot13(char *S)
 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char datarot[] =
 "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwzyzabcdefghijklm";
-	for (i = 0; d[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
