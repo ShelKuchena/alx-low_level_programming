@@ -8,7 +8,7 @@
  *
  * Return: a pointer to a new string, or NULL if it fails
  */
-char *aegstostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	char *str, *s;
 	int i, j, k, len = 0;
