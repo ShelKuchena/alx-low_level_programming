@@ -11,7 +11,7 @@ void create_word(char **, char *, int, int, int);
 char **strtow(char *str)
 {
 	int i, flag, len;
-	char **woeds;
+	char **words;
 
 	if (str == NULL || str[0] == '\0' || (str[0] == ' ' && str[i] == '\0'))
 	       return (NULL);
