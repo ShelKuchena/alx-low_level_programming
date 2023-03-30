@@ -1,23 +1,15 @@
-#include "lists.h"
+#include <stdio.h>
+
+void first(void) __attribute__ ((constructor));
 
 /**
- * free_listint2 - frees a linked list
- * @head: pointer to the listint_t list to be freed
+ * first - prints a sentence before the main
+ * function is executed
  */
-void free_listint2(listint_t **head)
+void first(void)
 {
-	listint_t *temp;
-
-	if (head == NULL)
-	return;
-
-	while (*head)
-	{
-	temp = (*head)->next;
-	free(*head);
-	*head = temp;
-	}
-
-	*head = NULL;
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
+
 
